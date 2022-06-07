@@ -7,11 +7,10 @@ and Multi-Scale Attention Network**. Much of this code is reused from the [origi
 
 ### Table of Contents
 - <a href='#requirements'>Requirements</a>
-- <a href='#datasets'>Datasets</a>
-- <a href='#training L-Net'>Training MMAL-Net</a>
+- <a href='#dataset'>Dataset</a>
+- <a href='#training L-Net'>Training MMMAL-Net</a>
 - <a href='#evaluation'>Evaluation</a>
 - <a href='#model'>Model</a>
-- <a href='#reference'>Reference</a>
 
 
 ## Requirements
@@ -26,7 +25,7 @@ and Multi-Scale Attention Network**. Much of this code is reused from the [origi
 - pillow 6.1.0
 - self-attention-cv 1.2.3
 
-## Datasets
+## Dataset
 
 Download the [FGVC-Aircraft](http://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/archives/fgvc-aircraft-2013b.tar.gz) datasets and copy the contents of the extracted **data/images** folder into **datasets/FGVC_Aircraft/data/images**)
 
@@ -39,4 +38,5 @@ If you want to train the MMMAL-Net, please download the pretrained model of [Res
 If you want to test the MMMAL-Net, just run ``python test.py``. You need to specify the ``model_path`` in ``test.py`` to choose the checkpoint model for testing.
 
 ## Model
-We also provide the checkpoint model trained by ourselves for 60 epochs on FGVC-Aircraft daataset, you can see it at **checkpoint/aircraft/epoch58.pth** 94.21% test accuracy.
+We also provide the checkpoint model trained by ourselves for 60 epochs on FGVC-Aircraft daataset, you can see it at **checkpoint/aircraft/epoch58.pth** with 94.21% test accuracy.
+
