@@ -39,4 +39,7 @@ If you want to test the MMMAL-Net, just run ``python test.py``. You need to spec
 
 ## Model
 We also provide the checkpoint model trained by ourselves for 60 epochs on FGVC-Aircraft daataset, you can see it at **checkpoint/aircraft/epoch58.pth** with 94.21% test accuracy.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 61f8ed324466d22939799c803527007fc19c4045
