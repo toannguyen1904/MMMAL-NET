@@ -69,7 +69,7 @@ with torch.no_grad():
         object_correct += pred.eq(y.view_as(pred)).sum().item()
 
         # overall
-        pred = (raw_logits + local_logits).max(1, keepdim=True)[1]
+        pred = (0.3 * raw_logits + 0.7 * local_logits).max(1, keepdim=True)[1]
         overall_correct += pred.eq(y.view_as(pred)).sum().item()
 
     print('\nObject branch accuracy: {}/{} ({:.2f}%)\nRaw branch accuracy: {}/{} ({:.2f}%)\nOverall accuracy: {}/{} ({:.2f}%)'.format(

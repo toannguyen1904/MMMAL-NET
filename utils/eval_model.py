@@ -64,7 +64,7 @@ def eval(model, testloader, criterion, status, save_path, epoch):
             pred = local_logits.max(1, keepdim=True)[1]
             local_correct += pred.eq(labels.view_as(pred)).sum().item()
 
-            pred = (0.53 * raw_logits + 0.65 * local_logits).max(1, keepdim=True)[1]
+            pred = (0.3 * raw_logits + 0.7 * local_logits).max(1, keepdim=True)[1]
             overall_correct += pred.eq(labels.view_as(pred)).sum().item() 
 
 
